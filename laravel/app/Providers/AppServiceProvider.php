@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Models\Product;
+use Flugg\Responder\Contracts\Transformers\TransformerResolver;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +25,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->app->make(TransformerResolver::class)->bind([
+            Product::class => \App\Transformers\Product::class,
+        ]);
         //
     }
 }
