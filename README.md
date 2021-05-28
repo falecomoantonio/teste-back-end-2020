@@ -1,8 +1,5 @@
 # Teste Back End 2020 #
 
-O teste consiste em criar uma mini API Rest utilizando Laravel como framework PHP, JWT como autenticação e um simples CRUD.
-Aqui na DIN DIGITAL nós costumamos trabalhar o desenvolvimento utilizando Docker como ambiente local ([Laradock](https://laradock.io/)), então este repositório já está preparado para configurar a instância, basta possuir os [requisitos de software](#software-requirements) e executar o [comando de configuração automática do ambiente](#automatic-setup)
-
 <a name="software-requirements"></a>
 ## Requisitos de software para o ambiente ##
 - Algum terminal de comandos
